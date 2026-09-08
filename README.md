@@ -11,7 +11,7 @@ Developed as a final project for an NLP course. Refactored into a multi-file str
 - **Word embeddings:** a custom Word2Vec model trained on IMDb reviews, a Wikipedia text corpus, or a combination of both.
 - **Sequence model:** an LSTM classifier built on top of the Word2Vec embeddings.
 - **Transformer model:** DistilBERT (`distilbert-base-uncased`), fine-tuned for binary sequence classification.
-- **Order experiment:** both the LSTM and the Transformer are trained and evaluated three times each — on the data in its original order, shuffled, and reversed — to check whether sample order affects the resulting model.
+- **Order experiment:** both the LSTM and the Transformer are trained and evaluated three times each - on the data in its original order, shuffled, and reversed — to check whether sample order affects the resulting model.
 - **Metrics:** Accuracy, F1-score, and confusion matrix, reported for every configuration.
 
 ---
@@ -33,7 +33,7 @@ NLP-Final-Project/
 
 ### How the modules interact
 
-`main.py` sets configuration values (sample sizes, Word2Vec source) and calls into the other modules in sequence — it contains no modeling logic itself:
+`main.py` sets configuration values (sample sizes, Word2Vec source) and calls into the other modules in sequence - it contains no modeling logic itself:
 
 1. `data_loader` loads the IMDb reviews and the Wikipedia corpus.
 2. `preprocessing` cleans and tokenizes both.
